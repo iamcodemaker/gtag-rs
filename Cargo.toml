@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "gtag-js-sys",
+    "gtag-rs",
+]
