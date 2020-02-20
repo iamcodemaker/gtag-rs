@@ -11,7 +11,7 @@ repository = "https://github.com/iamcodemaker/gtag-rs"
 
 
 [dependencies]
-gtag-js-sys = { path = "../gtag-js-sys" }
+gtag-js-sys = "0.1"
 serde = "1.0"
 serde_json = "1.0"
 
