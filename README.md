@@ -17,7 +17,7 @@ serde_json = "1.0"
 
 `lib.rs`
 ```rust
-use gtag_rs::DataLayer;
+use gtag_js::DataLayer;
 use serde_json::json;
 
 fn main() {
