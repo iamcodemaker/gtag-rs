@@ -1,4 +1,4 @@
-# gtag-rs [![Crates.io](https://img.shields.io/crates/v/gtag-rs.svg)](https://crates.io/crates/gtag-rs)
+# gtag-js [![Crates.io](https://img.shields.io/crates/v/gtag-js.svg)](https://crates.io/crates/gtag-js)
  
 
 A rustic wrapper around Google's [gtag.js] javascript framework. See the
@@ -10,7 +10,7 @@ Ensure the [gtag.js] snippet has been properly installed before your wasm
 module runs. Instructions can be found in the [gtag.js documentation].
 
 ```rust
-use gtag_rs::DataLayer;
+use gtag_js::DataLayer;
 use serde_json::json;
 
 fn main() {

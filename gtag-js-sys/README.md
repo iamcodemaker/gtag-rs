@@ -1,6 +1,6 @@
 # gtag-js-sys [![Crates.io](https://img.shields.io/crates/v/gtag-js-sys.svg)](https://crates.io/crates/gtag-js-sys)
 
-A raw wrapper around Google's [gtag.js] javascript framework. See the `gtag-rs`
+A raw wrapper around Google's [gtag.js] javascript framework. See the `gtag-js`
 crate for a more rustic, higher level wrapper.
 
 ## License

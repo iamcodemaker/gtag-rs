@@ -1,4 +1,4 @@
-# gtag-rs
+# gtag-js
 
 A wrapper around Google's [gtag.js] framework.
 
@@ -10,7 +10,7 @@ module runs. Instructions can be found in the [gtag.js documentation].
 `Cargo.toml`
 ```toml
 [dependencies]
-gtag-rs = "0.1"
+gtag-js = "0.1"
 serde_json = "1.0"
 ```
 
