@@ -10,7 +10,7 @@ module runs. Instructions can be found in the [gtag.js documentation].
 `Cargo.toml`
 ```toml
 [dependencies]
-gtag-js = "0.1"
+gtag-js = "0.2"
 serde_json = "1.0"
 ```
 
