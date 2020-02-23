@@ -1,0 +1,22 @@
+[package]
+name = "gtm-js"
+version = "0.1.0"
+authors = ["Matthew Nicholson <matt@matt-land.com>"]
+edition = "2018"
+description = "A rustic wrapper around Google's gtm.js tag manager snippet."
+license = "MIT/Apache-2.0"
+categories = ["wasm"]
+keywords = ["wasm", "gtm", "js"]
+repository = "https://github.com/iamcodemaker/gtag-rs"
+
+
+[dependencies]
+gtm-js-sys = "0.1"
+serde = "1.0"
+serde_json = "1.0"
+
+[dependencies.wasm-bindgen]
+version = "0.2.58"
+features = [
+  'serde-serialize',
+]

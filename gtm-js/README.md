@@ -1,58 +1,19 @@
-# gtag-js
-
-A wrapper around Google's [gtag.js] framework.
-
-## Example
-
-Ensure the [gtag.js] snippet has been properly installed before your wasm
-module runs. Instructions can be found in the [gtag.js documentation].
-
-`Cargo.toml`
-```toml
-[dependencies]
-gtag-js = "0.2"
-serde_json = "1.0"
-```
+# gtm-js [![Crates.io](https://img.shields.io/crates/v/gtm-js.svg)](https://crates.io/crates/gtm-js)
 
 
-`lib.rs`
-```rust
-use gtag_js::DataLayer;
-use serde_json::json;
-
-fn main() {
-    let gtag = DataLayer::new("GA_MEASUREMENT_ID");
-
-    gtag.push("config", json!({
-        "page_title": "homepage",
-        "page_path": "/home",
-    }).unwrap();
-}
-```
-
-# gtm-js
-
-A wrapper around Google's [gtm.js] snippet.
+A rustic wrapper around Google's [gtm.js] tag manager. See the `gtm-js-sys`
+crate for a more low level wrapper.
 
 ## Example
 
 Ensure the [gtm.js] snippet has been properly installed before your wasm
 module runs. Instructions can be found in the [gtm.js documentation].
 
-`Cargo.toml`
-```toml
-[dependencies]
-gtm-js = "0.1"
-serde_json = "1.0"
-```
-
-
-`lib.rs`
 ```rust
 use serde_json::json;
 
 fn main() {
-    gtm_js::push("config", json!({
+    gtm_js::push(json!({
         "event": "pageview",
         "page_title": "homepage",
         "page_path": "/home",
@@ -77,7 +38,5 @@ Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in this project by you, as defined in the Apache-2.0 license,
 shall be dual licensed as above, without any additional terms or conditions.
 
-[gtag.js]: https://developers.google.com/gtagjs
-[gtag.js documentation]: https://developers.google.com/gtagjs/devguide/snippet
 [gtm.js]: https://developers.google.com/tag-manager/quickstart
 [gtm.js documentation]: https://developers.google.com/tag-manager/quickstart

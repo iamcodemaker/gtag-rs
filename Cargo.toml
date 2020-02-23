@@ -3,4 +3,6 @@
 members = [
     "gtag-js-sys",
     "gtag-js",
+    "gtm-js-sys",
+    "gtm-js",
 ]
